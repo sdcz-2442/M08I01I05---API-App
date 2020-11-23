@@ -20,7 +20,6 @@ class _BugsScreenState extends State<BugsScreen> {
           builder: (context, snapshot) {
             if (snapshot.connectionState == ConnectionState.none &&
                 snapshot.hasData == null) {
-              //print('project snapshot data is: ${projectSnap.data}');
               return Container();
             }
             if (snapshot.connectionState == ConnectionState.waiting) {
@@ -31,7 +30,6 @@ class _BugsScreenState extends State<BugsScreen> {
                 ),
               );
             }
-
             if (snapshot.connectionState == ConnectionState.done &&
                 !snapshot.hasData) {
               return Text('no data');

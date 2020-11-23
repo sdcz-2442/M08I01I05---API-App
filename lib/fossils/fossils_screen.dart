@@ -20,7 +20,6 @@ class _FossilsScreenState extends State<FossilsScreen> {
           builder: (context, snapshot) {
             if (snapshot.connectionState == ConnectionState.none &&
                 snapshot.hasData == null) {
-              //print('project snapshot data is: ${projectSnap.data}');
               return Container();
             }
             if (snapshot.connectionState == ConnectionState.waiting) {
